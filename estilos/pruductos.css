@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.cabe{
+    height: 100vh;
+    background-image: url(https://i0.wp.com/gentleman.com.mx/wp-content/uploads/2019/02/barberias-ciudad-de-mexico.jpg?w=980&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cabe #filt{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 60%;
+}
+
+.cabe #filt h1.nombre{
+    color: white;
+    opacity: .85;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1150%;
+    color: #c1924c;
+    margin-top: 113.900px;
+    margin-bottom: 5px;
+}
+
+.cabe #filt p{
+    color: #c1924c;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+}
+
+.cabe #filt .mynav{
+    display: flex;
+    align-items: center;
+}
+
+.cabe #filt .mynav #kalia{
+    width: 40%;
+    margin: 20px;
+    color: #c1924c;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    font-size: 34px;
+}
+
+.cabe #filt .mynav ul{
+    width: 60%;
+    display: flex;
+    gap: 30px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.cabe #filt .mynav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cabe #filt .mynav ul li#pos a{
+    background-color: #c1924c;
+    color: black;
+    opacity: 100%;
+}
+
+.cabe #filt .mynav ul li a{
+    transition: all 3ms;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.3ms;
+    opacity: 100%;
+}
+
+.cabe #filt .mynav ul li a:hover{
+    background-color: #c1924c;
+    transition: .3s;
+    color: black;
+    opacity: 100%;
+}
+
+/*----- CONTENEDOR 1 -----*/
+
+.cont1{
+    background: linear-gradient(#121212, #0d0d0d);
+    height: 200vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont1 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    color: #c1924c;
+    opacity: 0.8;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.cont1 #title{
+    font-size: 80px;
+    margin: 5px;
+}
+
+.divider {
+    width: 200px;
+    height: 3px;
+    background: #c1924c;
+    margin: 0px auto;
+}
+
+.cont1 .fila{
+    display: flex;
+    margin: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont1 .fila img{
+    height: 250px;
+}
+
+.card{
+    border: solid 3px #c1924c !important;
+    background-color: transparent;
+    height: 1500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card-body {
+    background-color: #a77d3d !important;
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body a{
+    background-color: black;
+    border: none;
+    text-align: center;
+}
+
+/*----- FOOTER -----*/
+
+footer{
+    background-color: #111;
+    color: #a1a1a1;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 10px;
+    align-items: center;
+    margin: 5px;
+}
+
+footer p#copy{
+    font-style: italic;
+    margin: 10px; 
+}
+
+footer p#redes {
+    line-height: 1.6;
+    margin: 10px;
+}
+
+/*---- RESPONSIVE -----*/
+
+@media screen and (max-width: 600px){
+    .cabe #filt .mynav{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .cabe #filt .mynav h1{
+        text-align: center;
+    }
+
+    .cabe #filt .mynav ul{
+        margin: 0;
+        padding: 0;
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cabe #filt h1.nombre{
+        font-size: 650%;
+    }
+
+    .cont1{
+        height: auto;
+    }
+
+    .cont1 #title{
+        font-size: 50px;
+        margin: 10px 0;
+    }
+
+    .cont1 h1{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .cont1 .fila{
+        flex-wrap: wrap;        /* Permite que bajen a otra fila */
+        justify-content: center;
+    }
+
+    .cont1 .card{
+        width: 45% !important;  /* 2 por fila */
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .cont1 .card img{
+        height: auto;
+    }
+
+    .card .card-body{
+        padding: 5px !important;
+    }
+
+    .card-body .card-title{
+        font-size: 15px;
+        font-weight: bolder;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .card-body .card-text{
+        font-size: 14px;
+    }
+
+    .card-body a{
+        font-size: 13px;
+    }
+}

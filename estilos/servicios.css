@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.cabe{
+    height: 100vh;
+    background-image: url(https://i0.wp.com/gentleman.com.mx/wp-content/uploads/2019/02/barberias-ciudad-de-mexico.jpg?w=980&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cabe #filt{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 60%;
+}
+
+.cabe #filt h1.nombre{
+    color: white;
+    opacity: .85;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1150%;
+    color: #c1924c;
+    margin-top: 113.900px;
+    margin-bottom: 5px;
+}
+
+.cabe #filt p{
+    color: #c1924c;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+}
+
+.cabe #filt .mynav{
+    display: flex;
+    align-items: center;
+}
+
+.cabe #filt .mynav #kalia{
+    width: 40%;
+    margin: 20px;
+    color: #c1924c;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    font-size: 34px;
+}
+
+.cabe #filt .mynav ul{
+    width: 60%;
+    display: flex;
+    gap: 30px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.cabe #filt .mynav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cabe #filt .mynav ul li#pos a{
+    background-color: #c1924c;
+    color: black;
+    opacity: 100%;
+}
+
+.cabe #filt .mynav ul li a{
+    transition: all 3ms;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.3ms;
+    opacity: 100%;
+}
+
+.cabe #filt .mynav ul li a:hover{
+    background-color: #c1924c;
+    transition: .3s;
+    color: black;
+    opacity: 100%;
+}
+
+/*----- CONTENEDOR 1 -----*/
+
+.cont1{
+    height: 100vh;
+    background-image: url(https://www.shutterstock.com/image-photo/empty-wooden-tabletop-product-display-600nw-2374648881.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont1 h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: #c1924c;
+    opacity: 0.7;
+    font-size: 500%;
+    margin: 20px;
+}
+
+.cont1 #car{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0) brightness(0); /* Las vuelve negras */
+}
+
+.cont1 #car #carouselModerm, #carouselClasic{
+    width: 30%;
+}
+
+.cont1 #car #carouselModerm img{
+    height: 550px;
+}
+
+.cont1 #car #carouselClasic img{
+    height: 550px;
+}
+
+.cont1 h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    color: #c1924c;
+    opacity: 0.8;
+    font-size: 300%;
+}
+
+/*----- CONTENEDOR 2 -----*/
+
+.cont2{
+    height: 100vh;
+    background-image: url(https://img.freepik.com/fotos-premium/tijeras-peines-champu-cortapelos-masculino-hoja-manstera-negro_432165-488.jpg?semt=ais_hybrid&w=740&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.costado{
+    width: 50%;
+    padding: 30px;
+    margin-left: 50%;
+    height: auto;
+    border: 1px solid white;
+    background: rgba(180, 180, 180, 0.097); /* color semitransparente */
+    backdrop-filter: blur(5px);          /* borra lo que está detrás */
+}
+
+.costado h1{
+    color: #c1924c;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.costado button img{
+    height: 30px;
+    float: right;
+}
+
+#boton{
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.list-group button{
+    background-color: transparent;
+    border-top: white solid 1px !important;
+    border-radius: 0px !important;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.list-group button#cab{
+    background-color: #c1924c;
+    border-color: #c1924c;
+    margin-bottom: 10px;
+    border-top: #c1924c solid 1px !important;
+    color: black;
+    text-transform: uppercase;
+}
+
+.list-group button#pie{
+    margin-bottom: 10px;
+}
+
+/*----- FOOTER -----*/
+
+footer{
+    background-color: #111;
+    color: #a1a1a1;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 10px;
+    align-items: center;
+    margin: 5px;
+}
+
+footer p#copy{
+    font-style: italic;
+    margin: 10px; 
+}
+
+footer p#redes {
+    line-height: 1.6;
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .cabe #filt .mynav{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .cabe #filt .mynav h1{
+        text-align: center;
+    }
+
+    .cabe #filt .mynav ul{
+        margin: 0;
+        padding: 0;
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cabe #filt h1.nombre{
+        font-size: 650%;
+    }
+
+    .cont1{height: auto;}
+
+    .cont1 .title{
+        margin: 10px 0;
+        font-size: 50px;
+    }
+
+    .cont1 #car #carouselModerm, #carouselClasic{
+        width: 50%;
+    }
+
+    .cont1 #car #carouselModerm img{
+        height: 300px;
+    }
+
+    .cont1 #car #carouselClasic img{
+        height: 300px;
+    }
+
+    .cont2{
+        align-items: center;
+    }
+
+    .costado{
+        margin: 10px;
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    .costado h1{
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .costado .responsive{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .costado .list-group{
+        width: 40%;
+    }
+
+    .costado .list-group button{
+        font-size: 15px;
+    }
+
+    .costado .list-group button img{
+        display: none;
+    }
+}
